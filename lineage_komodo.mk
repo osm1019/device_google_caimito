@@ -18,6 +18,19 @@ $(call inherit-product, device/google/zumapro/evolution_common.mk)
 $(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device-lineage.mk)
 $(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device-evolution.mk)
 
+#Evolution Xtras
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GMS := true
+TARGET_FACE_UNLOCK_SUPPORTED := false
+
+#Evolution build type
+EVO_BUILD_TYPE := Official
+
+#BCR
+BUILD_BCR := true
+
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 9 Pro XL
